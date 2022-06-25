@@ -25,13 +25,17 @@ public class Main {
                 }
             } catch(InputMismatchException e) {
                 System.out.println("Input type was incorrect.");
+                scanner.nextLine();
             } catch(IllegalArgumentException e) {
                 System.out.println("UUID invalid.");
+                scanner.nextLine();
             } catch(NullPointerException e) {
                 System.out.println("Student does not exist.");
+                scanner.nextLine();
             } catch(Exception e) {
                 System.out.println("Unknown Error");
                 e.printStackTrace();
+                scanner.nextLine();
             }
         } while (!shouldExit);
         System.out.println("Signing off...");
