@@ -5,7 +5,7 @@
 
 ## Instructions
 Open a command prompt or terminal in the directory.
-`./gradlew run`
+`./gradlew run --console=plain`
 
 ## Idea Instructions
 Open the directory inside IDEA

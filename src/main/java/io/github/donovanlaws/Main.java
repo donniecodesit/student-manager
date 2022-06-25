@@ -1,6 +1,7 @@
 package io.github.donovanlaws;
 
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Main {
@@ -31,6 +32,9 @@ public class Main {
                 scanner.nextLine();
             } catch(NullPointerException e) {
                 System.out.println("Student does not exist.");
+                scanner.nextLine();
+            } catch(NoSuchElementException e) {
+                System.out.println("No data found.");
                 scanner.nextLine();
             } catch(Exception e) {
                 System.out.println("Unknown Error");
